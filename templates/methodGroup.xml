@@ -1,0 +1,14 @@
+<templateSet group="methodGroup">
+  <template name="cmt" value="/**&#10; * $clss_name$.$method$()&#10; * @Description: $put$&#10; * @Date: [ $date$ $time$ ]&#10; * @author: monezhao@163.com&#10; * @param: $params$&#10; * @return: $returns$&#10; * @Version: v1.0&#10; */" description="方法注释模板" toReformat="false" toShortenFQNames="true">
+    <variable name="clss_name" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="put" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date(&quot;yyy-MM-dd&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time(&quot;HH:mm:ss&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="methodParameters()" defaultValue="" alwaysStopAt="true" />
+    <variable name="returns" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
